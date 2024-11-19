@@ -3,35 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "author": {
-    "name": "Mohid Kazi",
     "email": "mohidkazix@gmail.com",
+    "name": "Mohid kazi",
     "url": "https://github.com/mohidkazi/event-management-platform"
   },
   "scripts": {
     "dev": "node ace serve --watch",
     "build": "node ace build --production",
     "start": "node server.js",
-    "test": "node ace test",
-    "lint": "eslint . --ext=.ts",
-    "format": "prettier --write ."
+    "test": "node ace test"
   },
-  "eslintConfig": {
-    "extends": [
-      "plugin:adonis/typescriptApp",
-      "prettier"
-    ],
-    "plugins": [
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": [
-        "error"
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "build"
-  ],
   "prettier": {
     "trailingComma": "es5",
     "semi": true,
@@ -42,30 +23,26 @@
     "arrowParens": "always",
     "printWidth": 100
   },
-  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
   "devDependencies": {
-    "@adonisjs/assembler": "5.9.6",
+    "@adonisjs/assembler": "^5.9.6",
     "@japa/preset-adonis": "^1.2.0",
-    "@japa/runner": "2.5.1",
+    "@japa/runner": "^2.5.1",
     "@types/proxy-addr": "^2.0.3",
     "@types/source-map-support": "^0.5.10",
     "adonis-preset-ts": "^2.1.0",
-    "eslint": "^9.15.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-adonis": "^2.1.1",
-    "eslint-plugin-prettier": "^5.2.1",
-    "pino-pretty": "^13.0.0",
+    "pino-pretty": "^11.3.0",
     "prettier": "^3.3.3",
-    "typescript": "~4.6",
+    "typescript": "4.8.4",
     "youch": "^3.3.4",
     "youch-terminal": "^2.2.3"
   },
   "dependencies": {
-    "@adonisjs/core": "^5.8.0",
-    "@adonisjs/repl": "^3.1.0",
+    "@adonisjs/core": "^5.9.0",
+    "@adonisjs/repl": "^3.1.11",
     "luxon": "^3.5.0",
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.2.2",
     "source-map-support": "^0.5.21"
-  }
+  },
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
 }
