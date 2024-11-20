@@ -20,6 +20,10 @@
 
 import Route from '@ioc:Adonis/Core/Route';
 
+Route.get('/', async () => {
+  return { hello: 'world' };
+});
+
 Route.post('add', 'EventsController.add').as('add-new-event');
 Route.post('update', 'EventsController.update').as('update-an-event');
 Route.post('delete', 'EventsController.delete').as('delete-an-event');

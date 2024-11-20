@@ -24,5 +24,10 @@
       }
     ]
   },
-  "testProviders": ["@japa/preset-adonis/TestsProvider"]
+  "testProviders": ["@japa/preset-adonis/TestsProvider"],
+  "metaFiles": [
+    ".env",
+    ".adonisrc.json",
+    "db/event.json"
+  ]
 }
